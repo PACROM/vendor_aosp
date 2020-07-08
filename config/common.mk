@@ -2,8 +2,8 @@ PRODUCT_BRAND ?= PACROM
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_UTC_DATE=0 \
-    ro.ota.romname=PACROM
-    ro.ota.version=001
+    ro.ota.romname=PACROM \
+    ro.ota.version=001 \
     ro.ota.manifest=https://raw.githubusercontent.com/PACROM/ota_xml/master/ota.xml
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
