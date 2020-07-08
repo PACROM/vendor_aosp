@@ -1,10 +1,6 @@
 PRODUCT_BRAND ?= PACROM
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_UTC_DATE=0 \
-    ro.ota.romname=PACROM \
-    ro.ota.version=001 \
-    ro.ota.manifest=https://raw.githubusercontent.com/PACROM/ota_xml/master/ota.xml
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -52,6 +48,12 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
     vendor/aosp/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
 endif
+
+# Some pac ota stuff
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.ota.romname=PACROM \
+    ro.ota.version=001 \
+    ro.ota.manifest=https://raw.githubusercontent.com/PACROM/ota_xml/master/ota.xml
 
 # Some permissions
 PRODUCT_COPY_FILES += \
