@@ -139,6 +139,10 @@ PRODUCT_PACKAGES += \
 # Screen recorder
 PRODUCT_PACKAGES += \
     Recorder
+   
+# PACROM OTA
+PRODUCT_PACKAGES += \
+	OTAUpdates
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
