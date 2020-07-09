@@ -132,6 +132,10 @@ PRODUCT_PACKAGES += \
 # Screen recorder
 PRODUCT_PACKAGES += \
     Recorder
+    
+# pac ota
+PRODUCT_COPY_FILES += \
+    vendor/aosp/pac/apps/ota-updates.apk:system/priv-apps/ota-updates/ota-updates.apk
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
