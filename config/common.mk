@@ -39,7 +39,7 @@ endif
 # Some pac ota stuff
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.ota.romname=PACROM \
-    ro.ota.version=001 \
+    ro.ota.version=002 \
     ro.ota.manifest=https://raw.githubusercontent.com/PACROM/ota_xml/master/ota.xml
 
 # Some permissions
