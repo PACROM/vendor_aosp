@@ -161,6 +161,9 @@ include vendor/gapps/config.mk
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
+#Pac
+include vendor/aosp/pac/apps/config.mk
+
 # Customization
 include vendor/google-customization/config.mk
 
