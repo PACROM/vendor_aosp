@@ -14,8 +14,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),bullhead,lux,sailfish)
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := ota-updates
 LOCAL_SRC_FILES := ota-updates.apk
@@ -35,4 +33,3 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
-endif
